@@ -1,4 +1,6 @@
 body{
+	padding: 0;
+    margin: 0;
 	background-color: #effdo1;	
 	font-family: "Lucida Grande", sans-serif;	
 	animation: scale 2s;
@@ -6,8 +8,8 @@ body{
 }
 
 @keyframes scale {
-  0%   { transform: scale(0.5,0.5); }
-  100% { transform: scale(1,1); }
+  0%   {transform: scale(0.5,0.5);}
+  100% {transform: scale(1,1);}
 }
 
 #omot{
@@ -15,7 +17,8 @@ body{
 	height:auto;
 	margin:10px auto;
 	border:5px solid black;
-}
+	position:relative;
+}	
 
 
 #zaglavlje{
@@ -24,21 +27,32 @@ body{
 
 }
 
+h1{
+	border:2px dotted black;
+}
+
 #logo{
 	width:5%;
 	height:5%;
 	border-radius: 50%;
 }
 
+#zemlja{
+	width:10%;
+	height:15%;
+	border:none;
+}
 
 #sidenav {
     height: 100%;
-    width: 150px;
+    width: 8%;
     position: fixed;
     top: 0;
     left: 0;    
     background-color: #000000;
     padding-top: 20px;
+    overflow-x: hidden;
+	z-index:1;
 }
 
 #sidenav a {
@@ -47,17 +61,20 @@ body{
     color: #bec4ce;
     display: block;
 	text-decoration:none; 
+	transition: 0.3s;
 }
 
 
 #socialMedia {
     height: 100%;
-    width: 150px;
+    width: 8%;
     position: fixed;
     top: 0;
     right: 0;
     background-color: #000000;
     padding-top: 20px;
+	overflow-x: hidden;
+	z-index:1;
 }
 
 #socialMedia a{
@@ -65,11 +82,17 @@ body{
 	font-size:25px;
 	color:#bec4ce;
 	display:block;
-	text-decoration:none;  
+	text-decoration:none; 
+    transition: 0.3s;	
 }
 
+#socialMedia a:hover {
+    color: #h5h5h5;
+} 
 
-
+#sidenav a:hover {
+    color: #h5h5h5;
+}
 
 fieldset{
     background-color:#e8eff9;
@@ -127,7 +150,6 @@ iframe{
     padding: 30px;
     font-size: 15px;
 } 
-
  
 /*AMERICA*/
 
@@ -142,10 +164,7 @@ iframe{
     margin: 25px;
     padding: 30px;
     font-size: 15px;
-	
 } 
-
-
 /*ASIA*/
 
 .gradB{
@@ -177,27 +196,15 @@ img {
    width: 500px;
    max-width: 100%; 
    height: 300px;
-   border: 2px solid black; 
+   border: 2px solid black;
 } 
 
- 
-#zemlja{
-	width:10%;
-	height:15%;
-	border:none;
-}
 
-#menu2{
+/*dole*/
+ 
+#futer{
 	height:50px;
 	background-color:#000000;
-}
-
-#menu2 a{
-	color:#bec4ce;
-	text-decoration:none;
-	display: flex row;
-    justify-content: center;
-	margin-top:60%;
 }
 
 audio{
@@ -206,8 +213,18 @@ audio{
 	float:right;
 }
 
+#doleIkone a{
+	padding: 20px 18px 16px 16px;
+	font-size:25px;
+	color:#bec4ce;
+	display:block row;
+	text-decoration:none;
+}
+/*about*/
 
-
+#autor{
+	background-color:#a477cb;
+}
 
 
 

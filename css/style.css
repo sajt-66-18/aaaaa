@@ -4,7 +4,6 @@ body{
 	background-color: #effdo1;	
 	font-family: "Lucida Grande", sans-serif;	
 	animation: scale 2s;
-	background-image: url(images/"background.jpeg");
 }
 
 @keyframes scale {
@@ -13,7 +12,7 @@ body{
 }
 
 #omot{
-	width:1500px;
+	width:60%;
 	height:auto;
 	margin:10px auto;
 	border:5px solid black;
@@ -28,7 +27,11 @@ body{
 }
 
 h1{
-	border:2px dotted black;
+	text-decoration:underline red;
+}
+
+h1:hover{
+	text-decoration:none;
 }
 
 #logo{
@@ -61,7 +64,6 @@ h1{
     color: #bec4ce;
     display: block;
 	text-decoration:none; 
-	transition: 0.3s;
 }
 
 
@@ -82,16 +84,15 @@ h1{
 	font-size:25px;
 	color:#bec4ce;
 	display:block;
-	text-decoration:none; 
-    transition: 0.3s;	
+	text-decoration:none; 	
 }
 
-#socialMedia a:hover {
-    color: #h5h5h5;
-} 
+#sidenav>a:hover {
+	text-decoration: underline red;
+}
 
-#sidenav a:hover {
-    color: #h5h5h5;
+#socialMedia>a:hover {
+	text-decoration: underline red;
 }
 
 fieldset{
@@ -220,20 +221,21 @@ audio{
 	display:block row;
 	text-decoration:none;
 }
+
+
+
 /*about*/
 
 #autor{
-	background-color:#a477cb;
+	background-color:white;
 }
 
-
-
-
-
-
-
-
-
-
+#autor>img{
+	display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+	height:50%;
+}
 
 
